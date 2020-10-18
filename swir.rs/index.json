@@ -1,0 +1,53 @@
+{
+    "title": "Deploying apps with SWIR with k8s operator",
+    "description": "How to deploy apps into SWIR platofrm with k8s operator",
+    "icon": "https://raw.githubusercontent.com/swir-rs/swir/master/graphics/swir_logo.png",
+    "difficulty": "Beginner",
+    "time": "10 mins",
+    "details": {
+	"steps": [
+	    {
+		"title": "Scenario Overview",
+		"text": "overview.md"
+	    },
+	    {
+		"title": "Deploying SWIR Clients",
+		"text": "deploying_clients.md"
+	    },
+	    {
+		"title": "Deploying SWIR Operator",
+		"text": "deploying_operator.md"
+	    }
+	],
+	"intro": {
+	    "text": "intro.md"
+	},
+	"finish": {
+	    "text": "finish.md"
+	},
+	"assets": {
+	    "client": [
+		{"file": "clients/*", "target": "/root/"},
+		{"file": "certs/*", "target": "/root/"},
+		{"file": "operator/*", "target": "/root/"},
+		{"file": "*.png", "target": "/root/graphics"}
+	    ]
+	}
+    },
+    "environment": {
+	"showdashboard": false,
+	"uilayout": "editor-terminal",
+	"uisettings": "javascript",
+	"showvisualise": false,
+	"showide": false,
+	"exclusionPatterns": ["./certs/*", "./graphics/*"],
+	"hideHiddenFiles":"true",
+	"dashboards": [
+	    {"name": "swir.rs", "href": "https://swir.rs"},
+	    {"name": "README", "href": "https://github.com/swir-rs/swir/blob/master/swir_in_action_examples/kubernetes/service_invocation_example/README.md"}
+	]
+    },
+    "backend": {
+	"imageid": "kubernetes-cluster-running"
+    }
+}
